@@ -5,33 +5,38 @@
     <title>{{basics.name}} - CV</title>
     <style>
       @import
-      url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-      * { box-sizing: border-box; margin: 0; padding: 0; } body { font-family:
-      'Open Sans', sans-serif; font-size: 14px; line-height: 1.5; color: #333;
-      background-color: #fff; margin: 0; padding: 0; } .container { max-width:
-      800px; margin: 0 auto; padding: 20px; } .header { text-align: center;
-      margin-bottom: 20px; } .header h1 { font-size: 28px; font-weight: 700;
-      margin-bottom: 5px; color: #2e6da4; } .header h2 { font-size: 18px;
-      font-weight: 600; margin-bottom: 10px; color: #555; } .contact-info {
-      display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
-      margin-bottom: 10px; } .contact-info span { font-size: 14px; } .summary {
-      margin-bottom: 25px; text-align: justify; } .section { margin-bottom:
-      25px; } .section-title { font-size: 16px; font-weight: 700;
-      text-transform: uppercase; margin-bottom: 15px; color: #2e6da4;
-      border-bottom: 2px solid #2e6da4; padding-bottom: 5px; } .work-item {
-      margin-bottom: 15px; } .work-title { font-weight: 600; margin-bottom: 5px;
-      } .work-details { display: flex; justify-content: space-between;
-      margin-bottom: 5px; font-style: italic; color: #555; } .work-highlights {
-      list-style-type: disc; padding-left: 20px; } .education-item {
-      margin-bottom: 15px; } .skills-section { display: flex; flex-wrap: wrap;
-      gap: 30px; } .skill-item { flex: 1 0 45%; margin-bottom: 15px; }
-      .skill-title { font-weight: 600; margin-bottom: 5px; } .language-section {
-      display: flex; flex-wrap: wrap; gap: 30px; } .language-item { flex: 1 0
-      30%; margin-bottom: 15px; } .certificates-section { display: flex;
-      flex-wrap: wrap; gap: 15px; } .certificate-item { flex: 1 0 45%;
-      margin-bottom: 15px; } .certificate-title { font-weight: 600; }
-      .certificate-details { display: flex; justify-content: space-between;
-      color: #555; }
+      url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap');
+      * { box-sizing: border-box; margin: 0; padding: 0; color: #000000; } body
+      { font-family: 'Crimson Pro', serif; font-size: 15px; line-height: 1.2; /*
+      Tight line spacing */ background-color: #fff; margin: 0; padding: 40px
+      80px 60px; /* Added bottom padding */ } .container { max-width: 800px;
+      margin: 0 auto; page-break-inside: avoid; /* Prevent section splitting */
+      } .header { text-align: center; margin-bottom: 15px; padding-bottom: 10px;
+      border-bottom: 1px solid #000000; } .header h1 { font-size: 32px;
+      font-weight: 700; margin-bottom: 3px; } .header h2 { font-size: 20px;
+      font-weight: 600; margin-bottom: 5px; } .contact-info { display: flex;
+      justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 5px;
+      font-size: 15px; } .contact-info a { color: #000000; text-decoration:
+      none; } .summary { margin-bottom: 15px; text-align: justify; line-height:
+      1.3; } .section { margin-bottom: 15px; page-break-inside: avoid; /*
+      Prevent section splitting */ } .section-title { font-size: 18px;
+      font-weight: 700; margin-bottom: 8px; padding-bottom: 2px; border-bottom:
+      1px solid #000000; } .work-item { margin-bottom: 12px; page-break-inside:
+      avoid; } .work-title { font-weight: 700; margin-bottom: 2px; font-size:
+      16px; } .work-details { display: flex; justify-content: space-between;
+      margin-bottom: 3px; font-style: italic; } .work-highlights {
+      list-style-type: disc; padding-left: 18px; margin-top: 3px; line-height:
+      1.2; } .work-highlights li { margin-bottom: 2px; } .education-item {
+      margin-bottom: 8px; } .skills-section { display: flex; flex-wrap: wrap;
+      gap: 15px; page-break-inside: avoid; } .skill-item { flex: 1 0 45%;
+      margin-bottom: 8px; } .skill-title { font-weight: 700; /* Made bold */
+      margin-bottom: 2px; } .language-section { display: flex; flex-wrap: wrap;
+      gap: 15px; } .language-item { flex: 1 0 30%; margin-bottom: 8px; }
+      .language-title { font-weight: 700; /* Made bold */ }
+      .certificates-section { display: flex; flex-wrap: wrap; gap: 8px; }
+      .certificate-item { flex: 1 0 45%; margin-bottom: 8px; } @media print {
+      body { padding-bottom: 80px; /* Extra bottom padding for print */ }
+      .section, .work-item, .skills-section { page-break-inside: avoid; } }
     </style>
   </head>
   <body>
@@ -40,22 +45,28 @@
         <h1>{{basics.name}}</h1>
         <h2>{{basics.label}}</h2>
         <div class="contact-info">
-          <span>{{basics.location.city}}, {{basics.location.countryCode}}</span>
+          <span>{{basics.location.city}}, {{basics.location.country}}</span>
           |
           <span>{{basics.phone}}</span>
           |
-          <span>{{basics.email}}</span>
+          <span><a href="mailto:{{basics.email}}">{{basics.email}}</a></span>
           |
-          <span>{{basics.website}}</span>
-          |
+          {{#if basics.website}}<span><a
+                href="{{basics.website}}"
+                target="_blank"
+              >my portfolio</a></span>
+            |{{/if}}
           {{#each basics.profiles}}
-            <span>{{this.network}}</span>{{#unless @last}} | {{/unless}}
+            <span><a
+                href="{{url}}"
+                target="_blank"
+              >{{network}}</a></span>{{#unless @last}} | {{/unless}}
           {{/each}}
         </div>
       </div>
 
       <div class="summary">
-        {{basics.summary}}
+        <p>{{basics.summary}}</p>
       </div>
 
       <div class="section">
@@ -67,9 +78,9 @@
               <span>{{company}}</span>
               <span>{{startDate}} – {{endDate}}</span>
             </div>
-            <div class="work-details">
-              <span>{{location}}</span>
-            </div>
+            {{#if location}}<div class="work-details">
+                <span>{{location}}</span>
+              </div>{{/if}}
             <ul class="work-highlights">
               {{#each highlights}}
                 <li>{{this}}</li>
@@ -87,9 +98,6 @@
             <div class="work-details">
               <span>{{institution}}</span>
             </div>
-            <div class="work-details">
-              <span>{{location}}</span>
-            </div>
           </div>
         {{/each}}
       </div>
@@ -100,7 +108,7 @@
           {{#each skills}}
             <div class="skill-item">
               <div class="skill-title">{{name}}</div>
-              <div>{{description}}</div>
+              <div>{{level}}</div>
             </div>
           {{/each}}
         </div>
@@ -127,9 +135,6 @@
               <div class="certificate-details">
                 <span>{{issuer}}</span>
                 <span>{{date}}</span>
-              </div>
-              <div class="certificate-details">
-                <span>{{location}}</span>
               </div>
             </div>
           {{/each}}
