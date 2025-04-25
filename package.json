@@ -1,9 +1,14 @@
 {
   "dependencies": {
+    "custom": "file:themes/custom",
     "jsonresume-theme-class": "^0.1.2",
     "jsonresume-theme-even": "^0.23.0",
     "jsonresume-theme-stackoverflow": "^2.1.0",
     "puppeteer": "^24.7.2",
     "resumed": "^5.0.0"
+  },
+  "scripts": {
+    "build": "npx resumed export -t custom -o taher-barakat-cv.pdf resume.json",
+    "dev": "npx resumed render -t custom -o output.html resume.json"
   }
 }

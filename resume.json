@@ -1,142 +1,156 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
-    "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "name": "Taher Barakat",
+    "label": "Front-End Developer",
+    "email": "taher.barakat12223@gmail.com",
+    "phone": "+963938907414",
+    "website": "my portolio",
+    "summary": "Front-End Developer with more than two years of professional experience at Syriatel Mobile Telecom, specializing in Angular development and responsive web applications. Skilled in building reusable components, implementing state management, and API integration, with a commitment to writing clean, maintainable code.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "city": "Damascus",
+      "region": "",
+      "postalCode": "",
+      "countryCode": "Syria"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": "https://www.twitter.com"
+        "network": "LinkedIn",
+        "username": "LinkedIn",
+        "url": "LinkedIn"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "GitHub",
+        "username": "GitHub",
+        "url": "GitHub"
       }
     ]
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "Syriatel Mobile Telecom",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2023-02",
+      "endDate": "Present",
+      "location": "Damascus",
+      "summary": "",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Maintain and enhance reporting systems related to sales, ensuring accuracy, efficiency, and scalability.",
+        "Collaborate on the development and optimization of systems built using Angular and ADO.NET to support sales reporting and analysis.",
+        "Gathering data from many sources and applying classification on it to facilitate and standardize reporting.",
+        "Make dynamic dashboards related to business scope.",
+        "Initiate special analysis reports and studies that reflect sales and marketing information analysis points of view.",
+        "Provide the concerned department with the requested reports using the latest available techniques.",
+        "Provide internal customers in MIS Management Information System with the list of eligible subscribers to certain offers.",
+        "Conduct pre-offer studies to locate segments of subscribers, spot market opportunities, and possible chances and risks.",
+        "Manage offers behavior from the database side (find eligibility and its segmentation depending on specific criteria).",
+        "Prepare yearly revenue budget template to gather all the necessary inputs from the Marketing Department and apply logical evaluation to issue yearly revenue budget."
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": ["Awarded 'Teacher of the Month'"]
+      "company": "No Company",
+      "position": "Freelancing Front-End Developer",
+      "website": "",
+      "startDate": "2020",
+      "endDate": "Present",
+      "location": "Online",
+      "summary": "",
+      "highlights": [
+        "Working on some university projects for students in Syria.",
+        "Building some simple web pages for variety of clients.",
+        "Proficient in developing modern and efficient web applications using Angular and React."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL", "CS2011 - Java Introduction"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "institution": "Damascus University",
+      "area": "Telecommunications & Electronics Engineering",
+      "studyType": "Bachelor Degree",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "location": "Damascus, Syria"
     }
   ],
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "level": "Advanced",
+      "keywords": [],
+      "description": "Proficient in developing modern and efficient web applications using Angular and React.js. Extensive experience in building reusable components for scalable and maintainable code."
     },
     {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": ["Mpeg", "MP4", "GIF"]
+      "name": "Version Control",
+      "level": "Advanced",
+      "keywords": ["Git"],
+      "description": "Proficient in utilizing version control systems, particularly Git, for collaborative and streamlined development processes."
+    },
+    {
+      "name": "State Management",
+      "level": "Advanced",
+      "keywords": ["Redux"],
+      "description": "Expertise in state management libraries such as Redux, ensuring efficient data flow and application state control."
+    },
+    {
+      "name": "Responsive Design",
+      "level": "Advanced",
+      "keywords": [],
+      "description": "Adept at creating responsive and visually appealing user interfaces, ensuring optimal user experience across various devices and screen sizes."
+    },
+    {
+      "name": "API Integration",
+      "level": "Advanced",
+      "keywords": ["REST"],
+      "description": "Skilled in integrating RESTful APIs and third-party services to enhance application functionality and data retrieval."
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "B2"
+    },
+    {
+      "language": "German",
+      "fluency": "A1"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Mother Language"
     }
   ],
-  "interests": [
+  "certificates": [
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
-    }
-  ],
-  "references": [
+      "name": "HTML and CSS in depth",
+      "issuer": "Meta/Coursera",
+      "date": "12/2018",
+      "url": "",
+      "location": "Online"
+    },
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
+      "name": "Programming with JavaScript",
+      "issuer": "Meta/Coursera",
+      "date": "11/2023",
+      "url": "",
+      "location": "Online"
+    },
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": ["GoogleMaps", "Chrome Extension", "Javascript"],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "http://missdirection.example.com",
-      "roles": ["Team lead", "Designer"],
-      "entity": "Smoogle",
-      "type": "application"
+      "name": "Version Control",
+      "issuer": "Meta/Coursera",
+      "date": "11/2023",
+      "url": "",
+      "location": "Online"
+    },
+    {
+      "name": "Introduction to Front-End Development",
+      "issuer": "Meta/Coursera",
+      "date": "10/2023",
+      "url": "",
+      "location": "Online"
     }
   ],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00",
-    "theme": "jsonresume-theme-even"
+    "theme": "./themes/custom"
   }
 }
